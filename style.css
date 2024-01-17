@@ -59,13 +59,13 @@ body{
 /* content part */
 
 .content{
-    padding: 17% ; 
+    padding: 14% ; 
 }
 
 .content__title{
     color: white;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 30px;
 }
 
@@ -79,7 +79,7 @@ body{
     font-weight: 400;
     font-size: 13px;
     line-height: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 57px;
     
 }
 
@@ -96,6 +96,7 @@ body{
    color: hsl(0, 0%, 100%);
    margin-bottom: 7px;
    font-weight: 700;
+   font-size: 22px;
 
 }
 
