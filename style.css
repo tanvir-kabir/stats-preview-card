@@ -1,0 +1,142 @@
+/* I've used all selector for removing the browser default margin and padding */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(233, 47%, 7%) ;
+	
+}
+
+
+.container{
+    max-width: 1020px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden; 
+    border-radius: 10px ;
+    background-color: hsl(244, 38%, 16%);
+    margin: 2rem;
+
+}
+
+
+.header__img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+/* header image */
+
+.header__img {
+    position: relative;
+}
+
+.header__img::after {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 78%, 42%, 0.6);
+    position: absolute;
+    content:'';
+    left: 0;
+    top: 0;
+}
+
+/* content part */
+
+.content{
+    padding: 17% ; 
+}
+
+.content__title{
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.content__title span {
+    color: hsl(277, 64%, 61%);
+    
+}
+
+.content__subtitle {
+    color: hsla(0, 0%, 100%, 0.65);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 50px;
+    
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding-right: 25px;
+   
+    
+}
+
+.stats__heading{
+   color: hsl(0, 0%, 100%);
+   margin-bottom: 7px;
+   font-weight: 700;
+
+}
+
+.stats__para{
+
+    font-weight: 400;
+    font-size: 10px;
+    color:  hsla(0, 0%, 100%, 0.6);
+    letter-spacing: 1px;
+}
+
+
+/* Media query for responsiveness */
+
+@media only screen and (max-width:480px) {
+    .container{
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .content{
+        padding: 12%;
+    }
+
+    .content__title{
+        font-size: 23px;
+
+    }
+
+    .header__img{
+        order: -1;
+    }
+
+    .stats{
+        padding-right: 0px;
+    }
+}
+
+
+
+
+
+
+
